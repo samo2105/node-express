@@ -232,7 +232,6 @@ app.get('/data', function (req, res) {
             "favoriteFruit": "banana"
         }
     ];
-
     res.send(resp)
 });
 
