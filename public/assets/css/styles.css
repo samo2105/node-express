@@ -5,3 +5,7 @@ footer {
     height: 10vh;
     text-align: center;
 }
+
+body {
+    background-color: lightblue;
+}

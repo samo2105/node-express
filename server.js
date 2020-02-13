@@ -13,16 +13,9 @@ app.get('/', function (req, res) {
     })
 });
 
-app.get('/about', function (req, res) {
+app.get('/projects', function (req, res) {
 
-    res.render('about')
-});
-
-app.get('/pricing', function (req, res) {
-
-    res.render('pricing', {
-        anio: new Date().getFullYear()
-    })
+    res.render('projects')
 });
 
 app.listen(8080, () => {
