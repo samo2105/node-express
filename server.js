@@ -1,14 +1,26 @@
 const express = require('express');
 const app = express();
-// PUBLIC
-app.use(express.static( __dirname + '/public'));
-//Express HBS
+const hbs = require('hbs');
 app.set('view engine', 'hbs');
-// DATA
-app.get('/', function (req, res) {
+app.use(express.static( __dirname + '/public'));
+hbs.registerPartials( __dirname + '/views/partials' );
 
+require('./hbs/helpers/helpers');
+
+app.get('/', function (req, res) {
     res.render('home', {
         nombre: 'Samo',
+    })
+});
+
+app.get('/about', function (req, res) {
+
+    res.render('about')
+});
+
+app.get('/pricing', function (req, res) {
+
+    res.render('pricing', {
         anio: new Date().getFullYear()
     })
 });
