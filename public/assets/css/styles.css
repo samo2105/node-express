@@ -7,5 +7,32 @@ footer {
 }
 
 body {
-    background-color: lightblue;
+    background-image: url("https://coolbackgrounds.io/images/backgrounds/white/white-unsplash-9d0375d2.jpg");
+    background-size: cover;
+}
+
+.raise:hover,
+.raise:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+}
+
+.carousel-item  img {
+    height: 60vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    -webkit-box-shadow: -1px 7px 34px 1px rgba(110,110,110,1);
+    -moz-box-shadow: -1px 7px 34px 1px rgba(110,110,110,1);
+    box-shadow: -1px 7px 34px 1px rgba(110,110,110,1);
+}
+
+nav {
+    -webkit-box-shadow: -1px 7px 34px 1px rgba(110,110,110,1);
+    -moz-box-shadow: -1px 7px 34px 1px rgba(110,110,110,1);
+    box-shadow: -1px 7px 34px 1px rgba(110,110,110,1);
 }
