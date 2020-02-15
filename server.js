@@ -7,6 +7,8 @@ hbs.registerPartials( __dirname + '/views/partials' );
 
 require('./hbs/helpers/helpers');
 
+const port = process.env.PORT || 8080
+
 app.get('/', function (req, res) {
     res.render('home', {
         nombre: 'Samo',
@@ -14,10 +16,9 @@ app.get('/', function (req, res) {
 });
 
 app.get('/projects', function (req, res) {
-
     res.render('projects')
 });
 
-app.listen(8080, () => {
+app.listen(port, () => {
     console.log('Escuchando puerto 8080')
 });
