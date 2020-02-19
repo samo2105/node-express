@@ -19,6 +19,11 @@ app.get('/projects', function (req, res) {
     res.render('projects')
 });
 
+app.get('/download_cv',(req, res) => {
+    const file = `${__dirname}/public/files/cv.pdf`
+    res.download(file)
+})
+
 app.listen(port, () => {
     console.log('Escuchando puerto 8080')
 });
